@@ -133,10 +133,6 @@ resource nodeapp 'Microsoft.App/containerApps@2022-03-01' = {
   properties: {
     managedEnvironmentId: environment.id
     configuration: {
-      ingress: {
-        external: false
-        targetPort: 3000
-      }
       dapr: {
         enabled: true
         appId: 'nodeapp'

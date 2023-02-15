@@ -221,10 +221,6 @@
       "properties": {
         "managedEnvironmentId": "[resourceId('Microsoft.App/managedEnvironments/', parameters('environment_name'))]",
         "configuration": {
-          "ingress": {
-            "external": false,
-            "targetPort": 3000
-          },
           "dapr": {
             "enabled": true,
             "appId": "nodeapp",
